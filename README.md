@@ -1,7 +1,7 @@
 # TheGist-extension
 Google chrome extension which summarizes news web pages.
 
-It uses http://thegist.herokuapp.com API to crawl and summarize pages.
+It uses TheGist API to crawl and summarize pages.
 
 Available at:
 
