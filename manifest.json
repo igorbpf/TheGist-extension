@@ -1,0 +1,26 @@
+{
+  "name": "TheGist",
+  "version": "0.1.0",
+  "manifest_version": 2,
+
+  "description": "It helps you to summarize news pages in 11 different languages.",
+  "icons": {"128": "thegist.png"},
+
+  "browser_action": {
+    "default_title": "TheGist",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["popup.css"],
+      "js": ["jquery-3.2.1.min.js", "popup.js"]
+    }
+  ],
+
+
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ]
+}
